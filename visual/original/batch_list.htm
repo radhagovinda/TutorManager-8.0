@@ -70,7 +70,10 @@
 <div class="rnr-c rnr-ch rnr-c-recordcontrols">
 
 {BEGIN newrecord_controls_block}
-<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">	
+<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}
+		<a href="batch_add.php" class="rnr-button" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
 		{BEGIN inlineadd_link}
 		<a href="#" class="rnr-button" {$inlineaddlink_attrs}>Inline Add</a>
 	{END inlineadd_link}
