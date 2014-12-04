@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">
+    {END pageCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.9600.16428">
+  </HEAD>
+  <BODY class="{$stylename} function-add" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_all}
+            <DIV class="rnr-c rnr-cv rnr-c-all">
+              <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+                {BEGIN container_add}
+                  <DIV class="rnr-c rnr-cv rnr-c-add">
+                    {BEGIN addheader}
+                      <DIV class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}">
+                        <SPAN>
+                          <H1>
+                            {$pagetitlelabel MarksEntrySelectBatch add}
+                          </H1>
+                        </SPAN>
+                      </DIV>
+                    {END addheader}
+                    {BEGIN message_block}
+                      <DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+                        <DIV class="rnr-message">
+                          {$message}
+                        </DIV>
+                      </DIV>
+                    {END message_block}
+                    <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+                      {BEGIN container_fields}
+                        <DIV class="rnr-c rnr-cv rnr-c-fields">
+                          <DIV class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}">
+                            <TABLE class="fieldGrid">
+                              {BEGIN BatchID_fieldblock}
+                                <TBODY>
+                                  <TR class="{$fielddispclass_BatchID}" data-fieldname="BatchID">
+                                    <TD class="rnr-label">
+                                      {BEGIN BatchID_label}
+                                        {$label MarksEntrySelectBatch BatchID}
+                                      {END BatchID_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$BatchID_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                </TBODY>
+                              {END BatchID_fieldblock}
+                            </TABLE>
+                          </DIV>
+                          {BEGIN addbuttons}
+                            <DIV class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">
+                              {BEGIN save_button}
+                                <A class="rnr-button main" id="saveButton{$id}" href="#">
+                                  Next >>
+                                </A>
+                              {END save_button}
+                              {BEGIN cancel_button}
+                                <A class="rnr-button" id="cancelButton{$id}" href="#">
+                                  Cancel
+                                </A>
+                              {END cancel_button}
+                              {BEGIN backToMenu_button}
+                                <A class="rnr-button" id="backToMenuButton{$id}" href="#">
+                                  Back to menu
+                                </A>
+                              {END backToMenu_button}
+                            </DIV>
+                          {END addbuttons}
+                        </DIV>
+                      {END container_fields}
+                    </DIV>
+                  </DIV>
+                {END container_add}
+              </DIV>
+            </DIV>
+          {END container_all}
+          {BEGIN container_all}
+            <TABLE width="30%" align="center" bordercolor="#ce0a00" style="width: 336px;" 
+bgcolor="#b0de01" rules="all" cellpadding="1">
+              <TBODY>
+                <TR>
+                  <TD style="width: 335px; white-space: normal; background-image: none; background-color: rgb(255, 215, 0);">
+                    <STRONG><FONT 
+      size="3">** Note:</FONT></STRONG><EM><FONT size="1">If you proceed to take&nbsp;enter marks&nbsp;for the selected Batch and Exam,&nbsp; the system will immidiately add&nbsp;marks records&nbsp;for the students with default&nbsp;NULL&nbsp;marks value. You've to&nbsp;enter marks for the individual students&nbsp;and press&nbsp; "Update Marks" button.</FONT></EM>
+                    <P>
+                    </P>
+                    <P>
+                      <EM><FONT size="1"><FONT size="3"><STRONG>Even</STRONG></FONT>after going to&nbsp;marks entry&nbsp;page, if you don't want to&nbsp;enter&nbsp;marks now, then you must press "Discard this Marks Sheet" button to cancel the records shown on the sheet. Otherwise you won't be able to enter marks for&nbsp;the certain Batch and Exam in future (unless the software administrator deletes the Batch-Exam combination)</FONT></EM>
+                    </P>
+                  </TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+          {END container_all}
+        </DIV>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

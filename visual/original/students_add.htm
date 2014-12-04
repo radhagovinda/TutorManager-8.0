@@ -1,0 +1,246 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel students add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN AdmittedOn_fieldblock}
+<tr class="{$fielddispclass_AdmittedOn}" data-fieldname="AdmittedOn">
+	<td class="rnr-label">
+		{BEGIN AdmittedOn_label}{$label students AdmittedOn}{END AdmittedOn_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AdmittedOn_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AdmittedOn_fieldblock}
+	{BEGIN Photo_fieldblock}
+<tr class="{$fielddispclass_Photo}" data-fieldname="Photo">
+	<td class="rnr-label">
+		{BEGIN Photo_label}{$label students Photo}{END Photo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Photo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Photo_fieldblock}
+	{BEGIN SalutationID_fieldblock}
+<tr class="{$fielddispclass_SalutationID}" data-fieldname="SalutationID">
+	<td class="rnr-label">
+		{BEGIN SalutationID_label}{$label students SalutationID}{END SalutationID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SalutationID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SalutationID_fieldblock}
+	{BEGIN FirstName_fieldblock}
+<tr class="{$fielddispclass_FirstName}" data-fieldname="FirstName">
+	<td class="rnr-label">
+		{BEGIN FirstName_label}{$label students FirstName}{END FirstName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FirstName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FirstName_fieldblock}
+	{BEGIN MiddleName_fieldblock}
+<tr class="{$fielddispclass_MiddleName}" data-fieldname="MiddleName">
+	<td class="rnr-label">
+		{BEGIN MiddleName_label}{$label students MiddleName}{END MiddleName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$MiddleName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END MiddleName_fieldblock}
+	{BEGIN LastName_fieldblock}
+<tr class="{$fielddispclass_LastName}" data-fieldname="LastName">
+	<td class="rnr-label">
+		{BEGIN LastName_label}{$label students LastName}{END LastName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LastName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LastName_fieldblock}
+	{BEGIN Gender_fieldblock}
+<tr class="{$fielddispclass_Gender}" data-fieldname="Gender">
+	<td class="rnr-label">
+		{BEGIN Gender_label}{$label students Gender}{END Gender_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Gender_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Gender_fieldblock}
+	{BEGIN DOB_fieldblock}
+<tr class="{$fielddispclass_DOB}" data-fieldname="DOB">
+	<td class="rnr-label">
+		{BEGIN DOB_label}{$label students DOB}{END DOB_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DOB_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DOB_fieldblock}
+	{BEGIN CurrentlyStudyingAt_fieldblock}
+<tr class="{$fielddispclass_CurrentlyStudyingAt}" data-fieldname="CurrentlyStudyingAt">
+	<td class="rnr-label">
+		{BEGIN CurrentlyStudyingAt_label}{$label students CurrentlyStudyingAt}{END CurrentlyStudyingAt_label}
+	</td>
+	<td class="rnr-control style3">
+		{$CurrentlyStudyingAt_editcontrol}&nbsp;
+	</td>
+</tr>
+{END CurrentlyStudyingAt_fieldblock}
+	{BEGIN MobileNumber_fieldblock}
+<tr class="{$fielddispclass_MobileNumber}" data-fieldname="MobileNumber">
+	<td class="rnr-label">
+		{BEGIN MobileNumber_label}{$label students MobileNumber}{END MobileNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$MobileNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END MobileNumber_fieldblock}
+	{BEGIN FathersName_fieldblock}
+<tr class="{$fielddispclass_FathersName}" data-fieldname="FathersName">
+	<td class="rnr-label">
+		{BEGIN FathersName_label}{$label students FathersName}{END FathersName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FathersName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FathersName_fieldblock}
+	{BEGIN FathersMobileNumber_fieldblock}
+<tr class="{$fielddispclass_FathersMobileNumber}" data-fieldname="FathersMobileNumber">
+	<td class="rnr-label">
+		{BEGIN FathersMobileNumber_label}{$label students FathersMobileNumber}{END FathersMobileNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FathersMobileNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FathersMobileNumber_fieldblock}
+	{BEGIN BatchID_fieldblock}
+<tr class="{$fielddispclass_BatchID}" data-fieldname="BatchID">
+	<td class="rnr-label">
+		{BEGIN BatchID_label}{$label students BatchID}{END BatchID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$BatchID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END BatchID_fieldblock}
+	<tr >
+	<td colspan="2">	
+		{$Section Additional_Info1}&nbsp;	
+	</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">{BEGIN save_button}
+<a href="#" class="rnr-button main" id="saveButton{$id}">Save</a>
+{END save_button}
+{BEGIN reset_button}
+<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+{END reset_button}
+{BEGIN cancel_button}
+<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+{END cancel_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+{END back_button}
+{BEGIN backToMenu_button}
+<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+{END backToMenu_button}</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

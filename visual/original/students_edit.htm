@@ -1,0 +1,260 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel students edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN IsActive_fieldblock}
+<tr class="{$fielddispclass_IsActive}" data-fieldname="IsActive">
+	<td class="rnr-label">
+		{BEGIN IsActive_label}{$label students IsActive}{END IsActive_label}
+	</td>
+	<td class="rnr-control style3">
+		{$IsActive_editcontrol}&nbsp;
+	</td>
+</tr>
+{END IsActive_fieldblock}
+	{BEGIN AdmittedOn_fieldblock}
+<tr class="{$fielddispclass_AdmittedOn}" data-fieldname="AdmittedOn">
+	<td class="rnr-label">
+		{BEGIN AdmittedOn_label}{$label students AdmittedOn}{END AdmittedOn_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AdmittedOn_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AdmittedOn_fieldblock}
+	{BEGIN Photo_fieldblock}
+<tr class="{$fielddispclass_Photo}" data-fieldname="Photo">
+	<td class="rnr-label">
+		{BEGIN Photo_label}{$label students Photo}{END Photo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Photo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Photo_fieldblock}
+	{BEGIN SalutationID_fieldblock}
+<tr class="{$fielddispclass_SalutationID}" data-fieldname="SalutationID">
+	<td class="rnr-label">
+		{BEGIN SalutationID_label}{$label students SalutationID}{END SalutationID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SalutationID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SalutationID_fieldblock}
+	{BEGIN FirstName_fieldblock}
+<tr class="{$fielddispclass_FirstName}" data-fieldname="FirstName">
+	<td class="rnr-label">
+		{BEGIN FirstName_label}{$label students FirstName}{END FirstName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FirstName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FirstName_fieldblock}
+	{BEGIN MiddleName_fieldblock}
+<tr class="{$fielddispclass_MiddleName}" data-fieldname="MiddleName">
+	<td class="rnr-label">
+		{BEGIN MiddleName_label}{$label students MiddleName}{END MiddleName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$MiddleName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END MiddleName_fieldblock}
+	{BEGIN LastName_fieldblock}
+<tr class="{$fielddispclass_LastName}" data-fieldname="LastName">
+	<td class="rnr-label">
+		{BEGIN LastName_label}{$label students LastName}{END LastName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LastName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LastName_fieldblock}
+	{BEGIN Gender_fieldblock}
+<tr class="{$fielddispclass_Gender}" data-fieldname="Gender">
+	<td class="rnr-label">
+		{BEGIN Gender_label}{$label students Gender}{END Gender_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Gender_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Gender_fieldblock}
+	{BEGIN DOB_fieldblock}
+<tr class="{$fielddispclass_DOB}" data-fieldname="DOB">
+	<td class="rnr-label">
+		{BEGIN DOB_label}{$label students DOB}{END DOB_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DOB_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DOB_fieldblock}
+	{BEGIN CurrentlyStudyingAt_fieldblock}
+<tr class="{$fielddispclass_CurrentlyStudyingAt}" data-fieldname="CurrentlyStudyingAt">
+	<td class="rnr-label">
+		{BEGIN CurrentlyStudyingAt_label}{$label students CurrentlyStudyingAt}{END CurrentlyStudyingAt_label}
+	</td>
+	<td class="rnr-control style3">
+		{$CurrentlyStudyingAt_editcontrol}&nbsp;
+	</td>
+</tr>
+{END CurrentlyStudyingAt_fieldblock}
+	{BEGIN MobileNumber_fieldblock}
+<tr class="{$fielddispclass_MobileNumber}" data-fieldname="MobileNumber">
+	<td class="rnr-label">
+		{BEGIN MobileNumber_label}{$label students MobileNumber}{END MobileNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$MobileNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END MobileNumber_fieldblock}
+	{BEGIN FathersName_fieldblock}
+<tr class="{$fielddispclass_FathersName}" data-fieldname="FathersName">
+	<td class="rnr-label">
+		{BEGIN FathersName_label}{$label students FathersName}{END FathersName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FathersName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FathersName_fieldblock}
+	{BEGIN FathersMobileNumber_fieldblock}
+<tr class="{$fielddispclass_FathersMobileNumber}" data-fieldname="FathersMobileNumber">
+	<td class="rnr-label">
+		{BEGIN FathersMobileNumber_label}{$label students FathersMobileNumber}{END FathersMobileNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$FathersMobileNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END FathersMobileNumber_fieldblock}
+		<tr>
+		<td colspan="2">
+			<div class="rnr-field">
+			{$Section Additional_Info1}&nbsp;	
+			</div>
+		</td>
+	</tr>
+
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN save_button}
+<a href="#" class="rnr-button main" {$savebutton_attrs}>Save</a>
+{END save_button}
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+{BEGIN view_page_button}
+<a href="#" class="rnr-button" {$view_page_button_attrs}>View</a>
+{END view_page_button}
+</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

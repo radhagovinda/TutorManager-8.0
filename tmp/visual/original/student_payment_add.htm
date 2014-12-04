@@ -1,0 +1,181 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel student_payment add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN StudentID_fieldblock}
+<tr class="{$fielddispclass_StudentID}" data-fieldname="StudentID">
+	<td class="rnr-label">
+		{BEGIN StudentID_label}{$label student_payment StudentID}{END StudentID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$StudentID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END StudentID_fieldblock}
+	{BEGIN ClassID_fieldblock}
+<tr class="{$fielddispclass_ClassID}" data-fieldname="ClassID">
+	<td class="rnr-label">
+		{BEGIN ClassID_label}{$label student_payment ClassID}{END ClassID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ClassID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ClassID_fieldblock}
+	{BEGIN SubjectID_fieldblock}
+<tr class="{$fielddispclass_SubjectID}" data-fieldname="SubjectID">
+	<td class="rnr-label">
+		{BEGIN SubjectID_label}{$label student_payment SubjectID}{END SubjectID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SubjectID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SubjectID_fieldblock}
+	{BEGIN Amount_fieldblock}
+<tr class="{$fielddispclass_Amount}" data-fieldname="Amount">
+	<td class="rnr-label">
+		{BEGIN Amount_label}{$label student_payment Amount}{END Amount_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Amount_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Amount_fieldblock}
+	{BEGIN PaidOn_fieldblock}
+<tr class="{$fielddispclass_PaidOn}" data-fieldname="PaidOn">
+	<td class="rnr-label">
+		{BEGIN PaidOn_label}{$label student_payment PaidOn}{END PaidOn_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PaidOn_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PaidOn_fieldblock}
+	{BEGIN ForMonth_fieldblock}
+<tr class="{$fielddispclass_ForMonth}" data-fieldname="ForMonth">
+	<td class="rnr-label">
+		{BEGIN ForMonth_label}{$label student_payment ForMonth}{END ForMonth_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ForMonth_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ForMonth_fieldblock}
+	{BEGIN AcademicYear_fieldblock}
+<tr class="{$fielddispclass_AcademicYear}" data-fieldname="AcademicYear">
+	<td class="rnr-label">
+		{BEGIN AcademicYear_label}{$label student_payment AcademicYear}{END AcademicYear_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AcademicYear_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AcademicYear_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">{BEGIN save_button}
+<a href="#" class="rnr-button main" id="saveButton{$id}">Save</a>
+{END save_button}
+{BEGIN reset_button}
+<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+{END reset_button}
+{BEGIN cancel_button}
+<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+{END cancel_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+{END back_button}
+{BEGIN backToMenu_button}
+<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+{END backToMenu_button}</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

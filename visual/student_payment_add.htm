@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">
+    {END pageCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.9600.16428">
+  </HEAD>
+  <BODY class="{$stylename} function-add" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_all}
+            <DIV class="rnr-c rnr-cv rnr-c-all">
+              <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+                {BEGIN container_add}
+                  <DIV class="rnr-c rnr-cv rnr-c-add">
+                    {BEGIN addheader}
+                      <DIV class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}">
+                        <SPAN>
+                          <H1>
+                            {$pagetitlelabel student_payment add}
+                          </H1>
+                        </SPAN>
+                      </DIV>
+                    {END addheader}
+                    {BEGIN message_block}
+                      <DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+                        <DIV class="rnr-message">
+                          {$message}
+                        </DIV>
+                      </DIV>
+                    {END message_block}
+                    <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+                      {BEGIN container_fields}
+                        <DIV class="rnr-c rnr-cv rnr-c-fields">
+                          <DIV class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}">
+                            <TABLE class="fieldGrid">
+                              <TBODY>
+                                {BEGIN StudentID_fieldblock}
+                                  <TR class="{$fielddispclass_StudentID}" data-fieldname="StudentID">
+                                    <TD class="rnr-label">
+                                      {BEGIN StudentID_label}
+                                        {$label student_payment StudentID}
+                                      {END StudentID_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$StudentID_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END StudentID_fieldblock}
+                                {BEGIN ClassID_fieldblock}
+                                  <TR class="{$fielddispclass_ClassID}" data-fieldname="ClassID">
+                                    <TD class="rnr-label">
+                                      {BEGIN ClassID_label}
+                                        {$label student_payment ClassID}
+                                      {END ClassID_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$ClassID_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END ClassID_fieldblock}
+                                {BEGIN SubjectID_fieldblock}
+                                  <TR class="{$fielddispclass_SubjectID}" data-fieldname="SubjectID">
+                                    <TD class="rnr-label">
+                                      {BEGIN SubjectID_label}
+                                        {$label student_payment SubjectID}
+                                      {END SubjectID_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$SubjectID_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END SubjectID_fieldblock}
+                                {BEGIN Amount_fieldblock}
+                                  <TR class="{$fielddispclass_Amount}" data-fieldname="Amount">
+                                    <TD class="rnr-label">
+                                      {BEGIN Amount_label}
+                                        {$label student_payment Amount}
+                                      {END Amount_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Amount_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Amount_fieldblock}
+                                {BEGIN PaidOn_fieldblock}
+                                  <TR class="{$fielddispclass_PaidOn}" data-fieldname="PaidOn">
+                                    <TD class="rnr-label">
+                                      {BEGIN PaidOn_label}
+                                        {$label student_payment PaidOn}
+                                      {END PaidOn_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$PaidOn_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END PaidOn_fieldblock}
+                                {BEGIN ForMonth_fieldblock}
+                                  <TR class="{$fielddispclass_ForMonth}" data-fieldname="ForMonth">
+                                    <TD class="rnr-label">
+                                      {BEGIN ForMonth_label}
+                                        {$label student_payment ForMonth}
+                                      {END ForMonth_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$ForMonth_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END ForMonth_fieldblock}
+                                {BEGIN AcademicYear_fieldblock}
+                                  <TR class="{$fielddispclass_AcademicYear}" data-fieldname="AcademicYear">
+                                    <TD class="rnr-label">
+                                      {BEGIN AcademicYear_label}
+                                        {$label student_payment AcademicYear}
+                                      {END AcademicYear_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$AcademicYear_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END AcademicYear_fieldblock}
+                              </TBODY>
+                            </TABLE>
+                          </DIV>
+                          {BEGIN addbuttons}
+                            <DIV class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">
+                              {BEGIN save_button}
+                                <A class="rnr-button main" id="saveButton{$id}" href="#">
+                                  Confirm &amp; Save Payment
+                                </A>
+                              {END save_button}
+                              {BEGIN reset_button}
+                                <A class="rnr-button" id="resetButton{$id}" href="#">
+                                  Reset
+                                </A>
+                              {END reset_button}
+                              {BEGIN cancel_button}
+                                <A class="rnr-button" id="cancelButton{$id}" href="#">
+                                  Cancel
+                                </A>
+                              {END cancel_button}
+                              {BEGIN back_button}
+                                <A class="rnr-button" id="backButton{$id}" href="#">
+                                  Back to list
+                                </A>
+                              {END back_button}
+                              {BEGIN backToMenu_button}
+                                <A class="rnr-button" id="backToMenuButton{$id}" href="#">
+                                  Back to menu
+                                </A>
+                              {END backToMenu_button}
+                            </DIV>
+                          {END addbuttons}
+                        </DIV>
+                      {END container_fields}
+                    </DIV>
+                  </DIV>
+                {END container_add}
+              </DIV>
+            </DIV>
+          {END container_all}
+        </DIV>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

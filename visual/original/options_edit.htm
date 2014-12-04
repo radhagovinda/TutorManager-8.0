@@ -1,0 +1,259 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel options edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN IndividualSMS_fieldblock}
+<tr class="{$fielddispclass_IndividualSMS}" data-fieldname="IndividualSMS">
+	<td class="rnr-label">
+		{BEGIN IndividualSMS_label}{$label options IndividualSMS}{END IndividualSMS_label}
+	</td>
+	<td class="rnr-control style3">
+		{$IndividualSMS_editcontrol}&nbsp;
+	</td>
+</tr>
+{END IndividualSMS_fieldblock}
+	{BEGIN BatchSMS_fieldblock}
+<tr class="{$fielddispclass_BatchSMS}" data-fieldname="BatchSMS">
+	<td class="rnr-label">
+		{BEGIN BatchSMS_label}{$label options BatchSMS}{END BatchSMS_label}
+	</td>
+	<td class="rnr-control style3">
+		{$BatchSMS_editcontrol}&nbsp;
+	</td>
+</tr>
+{END BatchSMS_fieldblock}
+	{BEGIN PaymentSMS_fieldblock}
+<tr class="{$fielddispclass_PaymentSMS}" data-fieldname="PaymentSMS">
+	<td class="rnr-label">
+		{BEGIN PaymentSMS_label}{$label options PaymentSMS}{END PaymentSMS_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PaymentSMS_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PaymentSMS_fieldblock}
+	{BEGIN ExamSMS_fieldblock}
+<tr class="{$fielddispclass_ExamSMS}" data-fieldname="ExamSMS">
+	<td class="rnr-label">
+		{BEGIN ExamSMS_label}{$label options ExamSMS}{END ExamSMS_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ExamSMS_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ExamSMS_fieldblock}
+	{BEGIN DefaultClass_fieldblock}
+<tr class="{$fielddispclass_DefaultClass}" data-fieldname="DefaultClass">
+	<td class="rnr-label">
+		{BEGIN DefaultClass_label}{$label options DefaultClass}{END DefaultClass_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DefaultClass_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DefaultClass_fieldblock}
+	{BEGIN DefaultSubject_fieldblock}
+<tr class="{$fielddispclass_DefaultSubject}" data-fieldname="DefaultSubject">
+	<td class="rnr-label">
+		{BEGIN DefaultSubject_label}{$label options DefaultSubject}{END DefaultSubject_label}
+	</td>
+	<td class="rnr-control style3">
+		{$DefaultSubject_editcontrol}&nbsp;
+	</td>
+</tr>
+{END DefaultSubject_fieldblock}
+	{BEGIN LetterheadHeader_fieldblock}
+<tr class="{$fielddispclass_LetterheadHeader}" data-fieldname="LetterheadHeader">
+	<td class="rnr-label">
+		{BEGIN LetterheadHeader_label}{$label options LetterheadHeader}{END LetterheadHeader_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LetterheadHeader_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LetterheadHeader_fieldblock}
+	{BEGIN LetterheadAddress1_fieldblock}
+<tr class="{$fielddispclass_LetterheadAddress1}" data-fieldname="LetterheadAddress1">
+	<td class="rnr-label">
+		{BEGIN LetterheadAddress1_label}{$label options LetterheadAddress1}{END LetterheadAddress1_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LetterheadAddress1_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LetterheadAddress1_fieldblock}
+	{BEGIN LetterheadAddress2_fieldblock}
+<tr class="{$fielddispclass_LetterheadAddress2}" data-fieldname="LetterheadAddress2">
+	<td class="rnr-label">
+		{BEGIN LetterheadAddress2_label}{$label options LetterheadAddress2}{END LetterheadAddress2_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LetterheadAddress2_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LetterheadAddress2_fieldblock}
+	{BEGIN LetterheadAddress3_fieldblock}
+<tr class="{$fielddispclass_LetterheadAddress3}" data-fieldname="LetterheadAddress3">
+	<td class="rnr-label">
+		{BEGIN LetterheadAddress3_label}{$label options LetterheadAddress3}{END LetterheadAddress3_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LetterheadAddress3_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LetterheadAddress3_fieldblock}
+	{BEGIN LetterheadMobile_fieldblock}
+<tr class="{$fielddispclass_LetterheadMobile}" data-fieldname="LetterheadMobile">
+	<td class="rnr-label">
+		{BEGIN LetterheadMobile_label}{$label options LetterheadMobile}{END LetterheadMobile_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LetterheadMobile_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LetterheadMobile_fieldblock}
+	{BEGIN LetterheadPhone_fieldblock}
+<tr class="{$fielddispclass_LetterheadPhone}" data-fieldname="LetterheadPhone">
+	<td class="rnr-label">
+		{BEGIN LetterheadPhone_label}{$label options LetterheadPhone}{END LetterheadPhone_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LetterheadPhone_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LetterheadPhone_fieldblock}
+	{BEGIN LetterHeadEmailID_fieldblock}
+<tr class="{$fielddispclass_LetterHeadEmailID}" data-fieldname="LetterHeadEmailID">
+	<td class="rnr-label">
+		{BEGIN LetterHeadEmailID_label}{$label options LetterHeadEmailID}{END LetterHeadEmailID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LetterHeadEmailID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LetterHeadEmailID_fieldblock}
+	{BEGIN LetterheadWebsite_fieldblock}
+<tr class="{$fielddispclass_LetterheadWebsite}" data-fieldname="LetterheadWebsite">
+	<td class="rnr-label">
+		{BEGIN LetterheadWebsite_label}{$label options LetterheadWebsite}{END LetterheadWebsite_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LetterheadWebsite_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LetterheadWebsite_fieldblock}
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN save_button}
+<a href="#" class="rnr-button main" {$savebutton_attrs}>Save</a>
+{END save_button}
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

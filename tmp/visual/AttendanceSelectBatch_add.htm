@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle} </TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.9600.16428"> </HEAD> 
+<BODY class="{$stylename} function-add" {$bodyattrs}>{BEGIN body}
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+{BEGIN container_add}
+<DIV class="rnr-c rnr-cv rnr-c-add">
+{BEGIN addheader}<DIV class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><SPAN>
+<H1>
+{$pagetitlelabel AttendanceSelectBatch add} </H1></SPAN> </DIV>
+{END addheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message} </DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}">
+<TABLE class="fieldGrid">
+  <TBODY>
+  {BEGIN BatchID_fieldblock}<TR class="{$fielddispclass_BatchID}" data-fieldname="BatchID">
+    <TD class="rnr-label">{BEGIN BatchID_label}
+      {$label AttendanceSelectBatch BatchID}{END BatchID_label} </TD>
+    <TD class="rnr-control style3">
+      {$BatchID_editcontrol} &nbsp;</TD></TR>
+  {END BatchID_fieldblock}{BEGIN AttendanceDate_fieldblock}<TR class="{$fielddispclass_AttendanceDate}" data-fieldname="AttendanceDate">
+    <TD class="rnr-label">{BEGIN AttendanceDate_label}
+      {$label AttendanceSelectBatch AttendanceDate}{END AttendanceDate_label} </TD>
+    <TD class="rnr-control style3">
+      {$AttendanceDate_editcontrol} &nbsp;
+  </TD></TR>{END AttendanceDate_fieldblock}</TBODY></TABLE> </DIV>
+{BEGIN addbuttons}<DIV class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><A class="rnr-button button" id="___Back" href="#" typeid="ib">&lt;&lt;&nbsp;Back</A>{BEGIN save_button}<A class="rnr-button main" id="saveButton{$id}" href="#"> Take Attendance </A> {END save_button}{BEGIN cancel_button}<A class="rnr-button" id="cancelButton{$id}" href="#"> Cancel </A> {END cancel_button}{BEGIN back_button}<A class="rnr-button" id="backButton{$id}" href="#"> Back to list </A> {END back_button}{BEGIN backToMenu_button}<A class="rnr-button" id="backToMenuButton{$id}" href="#"> Back to menu </A> 
+{END backToMenu_button}</DIV>{END addbuttons}</DIV>{END container_fields}</DIV></DIV> {END container_add}</DIV></DIV> {END container_all}
+{BEGIN container_all}
+<TABLE width="30%" align="center" bordercolor="#ce0a00" style="width: 30%;" 
+bgcolor="#b0de01" rules="all" cellpadding="1">
+  <TBODY>
+  <TR>
+    <TD style="width: 339px; white-space: normal; background-image: none; background-color: rgb(255, 215, 0);"><STRONG><FONT 
+      size="3">&nbsp;** Note:</FONT></STRONG><EM><FONT size="1">If you proceed 
+      to take attendance for the selected Batch and Date,&nbsp; the system will 
+      immidiately add attendance records of the students with 
+      default&nbsp;'Abscent'&nbsp;value. You've to tick mark respective students 
+      and press&nbsp; "Confirm Attendance" button.</FONT></EM> 
+      <P></P>
+      <P><EM><FONT size="1"><FONT size="3"><STRONG>Even</STRONG></FONT>after 
+      going to next page, if you don't want to take attendance now, then you 
+      must press "Discard this attendance sheet" button to cancel the records 
+      shown on the sheet. Otherwise you won't be able to take attendance of the 
+      certain Batch and Date</FONT></EM> </P></TD></TR></TBODY></TABLE>{END container_all}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>
